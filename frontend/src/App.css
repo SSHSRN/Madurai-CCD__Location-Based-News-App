@@ -29,14 +29,6 @@
   border-radius: 30px;
 }
 
-.linkInput{
-  width: 40%;
-  height: 30px;
-  border: 1px solid black;
-  border-radius: 5px;
-  padding: 5px;
-}
-
 .submitBtn{
   border: 5px solid rgb(250, 200, 100);
   border-radius: 5px;
