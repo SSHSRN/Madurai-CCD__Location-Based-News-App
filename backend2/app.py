@@ -11,7 +11,7 @@ CORS(app)
 
 @app.route('/', methods=['GET'])
 def apiTest():
-    return {'message': 'API work pannudhu da!'}
+    return ("<h1>Python Backend is working!😀</h1>")
 
 @app.route('/getLocationNews', methods=['GET'])
 def getLocationThenNews():
@@ -24,9 +24,6 @@ def getLocationThenNews():
     # send a get request to the news api
     # news = requests.get('https://newsapi.org/v2/top-headlines?country='+country_code+'&apiKey='+os.getenv('NEWS_API_KEY'))
     newsLink = os.getenv('NEWS_LINK')
-    json_data = {
-    'country_code': country_code,
-    }
     # send a get request to the newsLink with country_code as parameter
     news = requests.get(newsLink+"/"+country_code)
     # news = requests.get(newsLink, json=json_data)
@@ -36,5 +33,5 @@ def getLocationThenNews():
 
 # Run Server in port 3000
 if __name__ == '__main__':
-    app.run(debug=True, port=3002)
-    print('Server running in port 3002')
+    app.run(debug=True, port=5000)
+    print('Server running in port 5000')

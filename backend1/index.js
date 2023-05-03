@@ -13,7 +13,7 @@ app.use(express.json());
 app.use(cors());
 
 app.get("/", (req, res) => {
-  res.send("Nothing to see here, da😌");
+  res.send("<h1>Node Backend is working!😀</h1>");
 });
 app.use("/application", require("./Routes/applicationRouter"));
 

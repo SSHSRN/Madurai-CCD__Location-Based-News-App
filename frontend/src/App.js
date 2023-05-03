@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import axios from 'axios';
 
 async function sendAPIReq() {
-  let news = await axios.get("http://localhost:3002/getLocationNews").then((res) => {
+  let news = await axios.get("https://sshsrn-scaling-trout-95vpwvpjqjv27jv9-5000.preview.app.github.dev/getLocationNews").then((res) => {
     console.log(res.data);
     return res.data;
   }
